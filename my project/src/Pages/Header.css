@@ -1,0 +1,28 @@
+.navigation-bar{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navigation-bar li{
+    margin: 0px 20px;
+
+}
+.navigation-bar li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.mobile-navigation{
+    list-style: none;
+
+}
+.mobile-navigation li{
+    margin-top: 20px;
+}
+.mobile-navigation li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+}
