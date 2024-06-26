@@ -14,6 +14,9 @@
     color: white;
     
 }
+.active{
+color: goldenrod !important;
+}
 .mobile-navigation{
     list-style: none;
 

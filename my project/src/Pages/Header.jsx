@@ -2,7 +2,7 @@ import FastfoodIcon from '@mui/icons-material/Fastfood';
 import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, Box, Divider, Drawer, IconButton, InputBase, Toolbar, Typography } from '@mui/material'
 import "./Header.css"
-import { Link } from 'react-router-dom';
+import { Link ,NavLink} from 'react-router-dom';
 import { useState } from 'react';
 export default function Header() {
   const [mobileopen, setmobileopen] = useState(false)
@@ -19,10 +19,10 @@ export default function Header() {
           xl: 50  // font size at the extra-large breakpoint
         }
       }} >
-        <InputBase />
         <FastfoodIcon />
         Resturaint
       </Typography>
+        <InputBase />
       <Divider />
       <ul className='mobile-navigation' >
         <li>
@@ -55,24 +55,24 @@ export default function Header() {
               xl: 50  // font size at the extra-large breakpoint
             }
           }} >
-           <InputBase />
-            <FastfoodIcon />
+           <InputBase/>
+            <FastfoodIcon/>
             Resturaint
           </Typography>
           <Box sx={{ mr: 2, display: { xs: "none", sm: "block" } }}>
 
             <ul className='navigation-bar' >
               <li>
-                <Link to={"/Home"}>Home</Link>
+                <NavLink activeclassname="active" to={"/Home"}>Home</NavLink>
               </li>
               <li>
-                <Link to={"/About"}>About</Link>
+                <NavLink to={"/About"}>About</NavLink>
               </li>
               <li>
-                <Link to={"/Contact"}>Contact</Link>
+                <NavLink to={"/Contact"}>Contact</NavLink>
               </li>
               <li>
-                <Link to={"/Menu"}>Menu</Link>
+                <NavLink to={"/Menu"}>Menu</NavLink>
               </li>
             </ul>
           </Box>
@@ -80,14 +80,18 @@ export default function Header() {
 
       </AppBar>
       <Box component="nav">
-        <Drawer varient="temporary" open={mobileopen} onClose={henddraertoggle} sx={{ display: { xs: "block", sm: 'none' }, "&.MuiDrawer-paper": { boxSizing: "border-box", width: "240px", } }}>
+        <Drawer varient="temporary" 
+        open={mobileopen} onClose={henddraertoggle}
+         sx={{ display: { xs: "block", sm: 'none' },
+         "&.MuiDrawer-paper": { boxSizing: "border-box",
+          width: "240px", } }}>
+
           {drawer}
         </Drawer>
         <Box >
           <Toolbar />
         </Box>
       </Box>
-
-    </div>
+   </div>
   )
 }
