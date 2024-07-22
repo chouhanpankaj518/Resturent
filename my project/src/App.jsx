@@ -16,9 +16,9 @@ export default function App() {
     <Header/>
     <Routes>
      <Route path='/' element={<Home/>}/>
-      <Route path='/Componeds/About' element={<About/>}/>
-      <Route path='/Componeds/Contact' element={<Contact/>}/>
-      <Route path='/Componeds/Menu' element={<Menu/>}/>
+      <Route path='/About' element={<About/>}/>
+      <Route path='/Contact' element={<Contact/>}/>
+      <Route path='/Menu' element={<Menu/>}/>
     </Routes>
     </BrowserRouter>
     <Footer/>
