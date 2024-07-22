@@ -15,10 +15,10 @@ export default function App() {
     <BrowserRouter>
     <Header/>
     <Routes>
-     <Route path='/Home' element={<Home/>}/>
-      <Route path='/About' element={<About/>}/>
-      <Route path='/Contact' element={<Contact/>}/>
-      <Route path='/Menu' element={<Menu/>}/>
+     <Route path='/' element={<Home/>}/>
+      <Route path='/Componeds/About' element={<About/>}/>
+      <Route path='/Componeds/Contact' element={<Contact/>}/>
+      <Route path='/Componeds/Menu' element={<Menu/>}/>
     </Routes>
     </BrowserRouter>
     <Footer/>

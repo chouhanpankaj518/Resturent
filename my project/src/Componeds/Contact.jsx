@@ -17,7 +17,7 @@ export default function Contact() {
       width:"300px",ml:10
      }}}>
     <TableContainer component={Paper}>
-      <Table aria-label="contact table">
+      <Table >
         <TableHead>
           <TableRow>
             <TableCell sx={{bgcolor:"black",color:"wheat",fontSize:'1rem'}} align='center'>
