@@ -7,7 +7,7 @@ import React from 'react'
 export default function Contact() {
   return (
     <div>
-     <Box sx={{my:10,ml:10,"$  h4":{fontWeight:"bold",md:2}}}>
+     <Box sx={{my:10,ml:5,"$  h4":{fontWeight:"bold",md:2}}}>
       <Typography variant='h4'>
         Contact My Resturent
       </Typography>
