@@ -17,7 +17,7 @@ export const Data = [
     {
         name: "Pizza",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        image: pizza,
+        image: pizza, 
         price: 250
     },
     {
